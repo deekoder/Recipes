@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.upheus.com.myapplication.DoneActivity"
+    android:background="#ff074d1c">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="1"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:text="Your Card"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:background="#ff325dff"
+            android:textColor="#fffff6fb"
+            android:textAlignment="center" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="131dp"
+            android:layout_weight="1.04">
+
+            <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/finalGrid"
+                android:numColumns="auto_fit"
+                android:gravity="center"
+                android:columnWidth="100dp"
+                android:stretchMode="columnWidth"
+                android:layout_width="fill_parent"
+                android:layout_height="47dp"
+                android:background="#ff0a832d"
+                android:layout_weight="0.24"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

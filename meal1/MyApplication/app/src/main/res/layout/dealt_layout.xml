@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="335dp"
+        android:layout_height="266dp"
+        android:weightSum="1"
+        android:layout_margin="@dimen/activity_horizontal_margin">
+
+        <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/gridView2"
+            android:numColumns="auto_fit"
+            android:gravity="center"
+            android:columnWidth="100dp"
+            android:stretchMode="columnWidth"
+            android:layout_width="62dp"
+            android:layout_height="fill_parent"
+            android:background="#ff08c0ff"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_weight="0.24">
+
+        </GridView>
+
+        <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/gridView3"
+            android:numColumns="auto_fit"
+            android:gravity="center"
+            android:columnWidth="100dp"
+            android:stretchMode="columnWidth"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:background="#ffa834ff"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_weight="0.15" />
+
+        <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/gridView4"
+            android:numColumns="auto_fit"
+            android:gravity="center"
+            android:columnWidth="100dp"
+            android:stretchMode="columnWidth"
+            android:layout_width="62dp"
+            android:layout_height="match_parent"
+            android:background="#ffffe228"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_weight="0.05" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="337dp"
+        android:layout_height="215dp"
+        android:layout_gravity="bottom"
+        android:layout_margin="@dimen/activity_horizontal_margin">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pile Blue"
+            android:id="@+id/button1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:background="#ff1bdfff"
+            android:layout_margin="@dimen/activity_horizontal_margin" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pile Violet"
+            android:id="@+id/button2"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:background="#ff891aff" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pile Yellow"
+            android:id="@+id/button3"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:background="#fffeff1a" />
+    </RelativeLayout>
+
+</LinearLayout>
